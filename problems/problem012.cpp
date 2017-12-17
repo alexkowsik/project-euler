@@ -21,7 +21,7 @@ int main()
 	}
 
 	cout << sum << endl;
-	system("PAUSE");
 
+	system("PAUSE");
 	return 0;
 }
