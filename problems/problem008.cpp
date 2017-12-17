@@ -25,7 +25,6 @@ int main()
 		a++;
 	}
 
-
 	cout << c << endl;
 	cin >> a;
 
