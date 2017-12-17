@@ -11,7 +11,7 @@ int main()
 	string s, s2;
 
 	ifstream file;
-	file.open("hello.txt");
+	file.open("problem013.txt");
 
 	for (int i = 0; i < 100; i++) {
 		x[i] = 0;
@@ -23,9 +23,7 @@ int main()
 	for (int i = 100; i < 150; i++) 
 		x[i] = s[i - 100] - 48;
 
-
 	for (int n = 1; n < 100; n++) {
-
 		getline(file, s2);
 
 		for (int i = 100; i < 150; i++) 
@@ -43,7 +41,8 @@ int main()
 	for (int i = 1; i < 150; i++) 
 		cout << x[i];
 
-	system("PAUSE");
+	cout << endl;
 
+	system("PAUSE");
 	return 0;
 }
