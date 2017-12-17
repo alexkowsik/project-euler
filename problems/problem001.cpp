@@ -5,8 +5,7 @@ using namespace std;
 
 int main()
 {
-	long sum3 = 0;
-	long sum5 = 0;
+	long sum3 = 0, sum5 = 0;
 	int a = 1;
 
 	while ((3 * a) < 1000) {
