@@ -9,7 +9,6 @@ int main()
 	long sum = 0, sqr = 0, factors = 0, a = 20;
 
 	while ((2 * factors) < 500) {
-
 		factors = 0;
 		sum = a*(a + 1) / 2;
 		sqr = sqrt(sum);
