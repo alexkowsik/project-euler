@@ -6,21 +6,17 @@ using namespace std;
 
 int main()
 {
-	int u = 0;
-	unsigned long long sum = 0;
-	unsigned long long a[310];
+	unsigned long long sum = 0, a[310];
 
-	for (int i = 0; i < 310; i++) {
+	for (int i = 0; i < 310; i++) 
 		a[i] = 0;
-	}
 
 	a[309] = 1;
 
 	for (int i = 1; i < 1001; i++) {
-		for (int j = 309; j > 1; j--) {
+		for (int j = 309; j > 1; j--) 
 			a[j] *= 2;
-			//cout << a[309] << endl << a[308] << endl;
-		}
+		
 		for (int j = 309; j > 1; j--) {
 			if (a[j] > 9) {
 				a[j] -= 10;
@@ -29,17 +25,12 @@ int main()
 		}
 	}
 
-	//cout << "\n\n\n\n";
 
-	for (int i = 0; i < 310; i++) {
-		//cout << i << " " << a[i] << endl;
+	for (int i = 0; i < 310; i++) 
 		sum += a[i];
-	}
 
-	cout << sum;
-	cin >> sum;
+	cout << sum << endl;
 
-
-
+	system("PAUSE");
 	return 0;
 }
