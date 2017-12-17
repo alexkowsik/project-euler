@@ -5,9 +5,7 @@ using namespace std;
 
 int main()
 {
-	int arr[165] = { 0 };
-	arr[165] = 1;
-	int a, b;
+	int a, b, arr[165] = { 0 }; arr[165] = 1;
 	unsigned long long sum = 0;
 
 	for (int i = 2; i <= 100; i++) {
