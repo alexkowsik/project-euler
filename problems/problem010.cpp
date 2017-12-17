@@ -1,9 +1,7 @@
-
 #include <iostream>
 #include <cmath>
 
 using namespace std;
-
 
 
 int main()
@@ -15,19 +13,18 @@ int main()
 	for (int i = 0; i <= End; i++)
 		list[i] = 0;
 
-	for (unsigned long i = 3; i <= sqrt(End); i += 2) {
+	for (unsigned long i = 3; i <= sqrt(End); i += 2) 
 		for (unsigned long j = i; i * j <= End; j += 2)
 			list[(i*j)] = true;
-	}
 
 	unsigned long long x = 2;
-	for (unsigned long i = 3; i <= End; i += 2) {
+	for (unsigned long i = 3; i <= End; i += 2) 
 		if (!list[i])
 			x = x + i;
-	}
 
-	cout << x;
-	cin >> x;
+	cout << x << endl;
+
+	system("PAUSE");
 	return 0;
 }
 
