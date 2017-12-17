@@ -25,7 +25,5 @@ int main()
 	cout << arr[20][20];
 	cin >> arr[0][0];
 
-
-
 	return 0;
 }
