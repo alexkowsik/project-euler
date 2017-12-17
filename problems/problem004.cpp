@@ -16,23 +16,21 @@ int main()
 
 	for (int i = 999; i > 100; i--) {
 		for (int j = 999; j > 100; j--) {
-			temp = i*j;
+			temp = i * j;
 			temp1 = to_string(temp);
 			temp2 = Reverse(temp1);
 
-			if (temp1 == temp2){
+			if (temp1 == temp2)
 				if (temp > largest)
 					largest = temp;
-			}
 		}
 	}
-
 	cout << largest << endl;
-	cin >> temp;
-
-
+	
+	system("PAUSE");
 	return 0;
 }
+
 
 string Reverse(string s) 
 {
