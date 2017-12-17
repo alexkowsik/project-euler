@@ -8,9 +8,9 @@ int main()
 	bool *numberList;
 	int a = 0, b = 0;
 
-	numberList = new bool[10000000 + 1];
+	numberList = new bool[10000000];
 
-	for (int i = 0; i <= 10000000; i++)
+	for (int i = 0; i < 10000000; i++)
 		numberList[i] = false;
 
 	for (int i = 0; i < 10000000; i += 2) 
@@ -27,12 +27,11 @@ int main()
 	{
 		if (!numberList[a]) 
 			b++;
-		
 		a++;
 	}
 
 	cout << a-1 << endl;
-	cin >> numberList[100];
 
+	system("PAUSE");
 	return 0;
 }
