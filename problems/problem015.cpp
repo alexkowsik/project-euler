@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
@@ -18,12 +17,11 @@ int main()
 	for (int i = 1; i < 21; i++) {
 		for (int j = 1; j < 21; j++) {
 			arr[j][i] = arr[j][i - 1] + arr[j - 1][i];
-			cout << arr[j][i] << endl;
 		}
 	}
 
 	cout << arr[20][20];
-	cin >> arr[0][0];
 
+	system("PAUSE");
 	return 0;
 }
