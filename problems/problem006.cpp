@@ -1,24 +1,20 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 
 int main()
 {
-	unsigned long a = 0, b = 0;
+	unsigned long a = 0, b = 100;
 
 	for (int i = 1; i < 101; i++)
-		a += (i*i);
+		a += (i * i);
 
-	for (int i = 1; i < 101; i++)
-		b += i;
+	b = b * (b + 1) / 2;
+	b *= b;
 
-	b = (b*b) - a;
+	cout << b - a << endl;
 
-	cout << b << endl;
-	cin >> a;
-
-
+	system("PAUSE");
 	return 0;
 }
