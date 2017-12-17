@@ -6,24 +6,19 @@ using namespace std;
 
 int main()
 {
-	long sum = 0;
-	long sum2 = 0;
-	long x=100;
+	long sum = 0, sqr = 0, factors = 0, a = 20;
 
-	for (long i = 20; i < 1000000; i++) {
-		x = 0;
-		sum = 0;
+	while ((2 * factors) < 500) {
 
-		sum = i*(i + 1) / 2;
-		sum2 = floor(sqrt(sum));
-		
-		for (int j = 1; j <= sum2; j++) {
-			if ((sum % j) == 0)
-				x++;
+		factors = 0;
+		sum = a*(a + 1) / 2;
+		sqr = sqrt(sum);
+
+		for (int i = 1; i <= sqr; i++) {
+			if ((sum % i) == 0)
+				factors++;
 		}
-
-		if ((2*x) >= 500)
-			break;
+		a++;
 	}
 
 	cout << sum << endl;
